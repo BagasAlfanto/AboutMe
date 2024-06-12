@@ -41,7 +41,6 @@ html{
 ::-webkit-scrollbar-thumb:hover{
     background: #bbb;
 }
-
 /* Navbar Section */
 .btn{
     font-weight: 500;
@@ -85,10 +84,10 @@ nav{
     z-index: 100;
 }
 .nav-logo{
-    position: relative;
+   position: relative;
 }
 .nav-name{
-    font-size: 23px;
+    font-size: 30px;
     font-weight: 600;
     color: var(--text-color-third);
 }
@@ -546,14 +545,25 @@ footer{
     .nav-button{
         display: none;
     }
+    .nav-menu.responsive{
+        left: 0;
+    }
     .nav-menu{
         position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
+        top: 80px;
+        left: -100%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(20px);
+        width: 100%;
+        min-height: 450px;
+        height: 90vh;
+        transition: .3s;
+    }
+    .nav_menu_list{
+        flex-direction: column;
     }
     .nav-menu-btn{
         display: flex;
