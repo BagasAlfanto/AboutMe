@@ -51,7 +51,7 @@ sr.reveal('.project-box',{interval: 200})
 sr.reveal('.top-header',{})
 
 const srLeft = ScrollReveal({
-    origin: 'left',
+    origin: 'top',
     distance: '80px',
     duration: 2000,
     reset: true
@@ -61,7 +61,7 @@ const srLeft = ScrollReveal({
   srLeft.reveal('.contact-info',{delay: 100})
 
   const srRight = ScrollReveal({
-    origin: 'right',
+    origin: 'top',
     distance: '80px',
     duration: 2000,
     reset: true
