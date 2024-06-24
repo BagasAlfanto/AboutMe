@@ -25,7 +25,7 @@ function headerShadow(){
 
 // Typing Effect
 var typingEffect = new Typed(".typedText",{
-    strings : ["Designer","Editor","Developer"],
+    strings : ["Editor","Developer"],
     loop : true,
     typeSpeed : 100,
     backSpeed : 80,
@@ -89,3 +89,34 @@ const srLeft = ScrollReveal({
   }
 
   window.addEventListener('scroll', scrollActive)
+
+
+  // email send
+  function emailSend(){
+
+    var userName = document.getElementById('name').value;
+    var phone = document.getElementById('phone').value;
+    var email = document.getElementById('email').value;
+  
+    var messageBody = "Name " + userName +
+    "<br/> Phone " + phone +
+    "<br/> Email " + email;
+    Email.send({
+      Host : "smtp.elasticemail.com",
+      Username : "bagascreative07@gmail.com",
+      Password : "0B21F123A845F882B4A0AE76F04BFCFA1C71",
+      To : 'bagascreative07@gmail.com',
+      From : "bagascreative07@gmail.com",
+      Subject : "This is the subject",
+      Body : messageBody
+  }).then(
+    message => {
+      if(message=='OK'){
+        swal("Secussful", "You clicked the button!", "success");
+      }
+      else{
+        swal("Error", "You clicked the button!", "error");
+      }
+    }
+  );
+  }

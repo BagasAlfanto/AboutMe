@@ -6,6 +6,16 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="" type="image/x-icon">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "yEBT9XEQQfCbel4dV",
+        });
+    })();
+    </script>
     <title>Portofolio Bagas</title>
 </head>
 <body>
@@ -37,7 +47,7 @@
                 </ul>
             </div>
             <div class="nav-button">
-                <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+                <!-- <button class="btn">Download CV <i class="uil uil-file-alt"></i></button> -->
             </div>
           </nav>
 
@@ -52,17 +62,15 @@
                         <p>I'm <span class="typedText"></span></p>
                     </div>
                     <div class="featured-text-info">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, neque? Ea placeat nihil vero deleniti non hic molestias suscipit alias, mollitia deserunt, reiciendis dignissimos repudiandae aut velit architecto perferendis culpa.</p>
+                        <p>I create atunning website for your business,<br>Intermediate experienced in Development and Video Editing</p>
                     </div>
                     <div class="featured-text-btn">
-                        <button class="btn blue-btn">Hire Me</button>
-                        <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+                        <a href="#contact"><button class="btn blue-btn">Hire Me</button></a>
+                        <!-- <button class="btn">Download CV <i class="uil uil-file-alt"></i></button> -->
                     </div>
                     <div class="social_icons">
-                        <div class="icon"><i class="uil uil-instagram"></i></div>
-                        <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-                        <div class="icon"><i class="uil uil-dribbble"></i></div>
-                        <div class="icon"><i class="uil uil-github-alt"></i></div>
+                        <a href="https://www.instagram.com/bgassfx_/"><div class="icon"><i class="uil uil-instagram"></i></div></a>
+                        <a href="https://github.com/BagasAlfanto/"><div class="icon"><i class="uil uil-github-alt"></i></div></a>
                     </div>
                 </div>
                 <div class="featured-image">
@@ -86,9 +94,10 @@
                     <div class="col">
                         <div class="about-info">
                             <h3>My Introduction</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus eligendi sint esse ad rerum vel dolorem voluptatibus aliquid commodi laborum possimus, ex provident dolore neque nulla nemo? Enim, officiis labore!</p>
+                            <p>I am Bagas Alfanto, I am a Fresh Graduate from SMK Negeri 1 Purwokerto with expertise in the fields of Frontend Development, Video Editing and Design. I have a passion for creating interesting and functional work, whether in the form of websites or videos. Please browse my portfolio to see my work, and feel free to contact me if you are interested in collaborating or have an interesting project we can work on together.</p>
+                            <!-- <p>Saya Bagas Alfanto, saya adalah Fresh Graduate dari SMK Negeri 1 Purwokerto dengan keahlian di bidang Frontend Development, Video Editing, dan Desain. Saya memiliki passion untuk menciptakan karya yang menarik dan fungsional, baik itu dalam bentuk website, ataupun video. Silakan jelajahi portofolio saya untuk melihat hasil karya saya, dan jangan ragu untuk menghubungi saya jika Anda tertarik untuk berkolaborasi atau memiliki proyek menarik yang bisa kita kerjakan bersama.</p> -->
                             <div class="about-btn">
-                                <button class="btn">Download CV <i class="uil uil-import"></i></button>
+                                <!-- <button class="btn">Download CV <i class="uil uil-import"></i></button> -->
                             </div>
                         </div>
                     </div>
@@ -119,7 +128,7 @@
                         </div>
                         <div class="skills-box">
                             <div class="skills-header">
-                                <h3>Designer</h3>
+                                <h3>Designer <br><p style="color: white;">aiwd</p></h3>
                             </div>
                             <div class="skills-list">
                                 <span>Figma</span>
@@ -161,27 +170,30 @@
                     <span>Do you have a project in your mind, contact me here</span>
                 </div>
                 <div class="row">
-                    <div class="col">
-                        <div class="contact-info">
-                            <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
-                            <p><i class="uil uil-envelope"></i> Email : bagascreative07@gmail.com</p>
-                            <p><i class="uil uil-phone"></i> Telpon : +62 813-1261-2727</p>
-                        </div>
+                    <div class="contact-info">
+                        <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                        <p><i class="uil uil-envelope"></i> Email : bagascreative07@gmail.com</p>
+                        <p><i class="uil uil-whatsapp"></i> Whatsapp : +62 813-1261-2727</p>
                     </div>
-                    <div class="col">
+                    <!-- <div class="col">
+                        
+                    </div> -->
+                    <!-- <div class="col">
                         <div class="form-control">
-                            <div class="form-input">
-                                <input type="text" class="input-field" placeholder="Name">
-                                <input type="text" class="input-field" placeholder="Email">
-                            </div>
-                            <div class="text-area">
-                                <textarea name="" id="" placeholder="Message"></textarea>
-                            </div>
-                            <div class="form-button">
-                                <button class="btn">Send <i class="uil uil-message"></i></button>
-                            </div>
+                            <form onsubmit="emailSend(); reset(); return false">
+                                <div class="form-input">
+                                    <input type="text" class="input-field" placeholder="Name">
+                                    <input type="email" class="input-field" placeholder="Email">
+                                </div>
+                                <div class="text-area">
+                                    <textarea name="" id="" placeholder="Message"></textarea>
+                                </div>
+                                <div class="form-button">
+                                    <button class="btn" type="submit">Send <i class="uil uil-message"></i></button>
+                                </div>
+                            </form>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </section>
         </main>
@@ -208,10 +220,8 @@
                 </ul>
             </div>
             <div class="footer-social-media">
-                <div class="icon"><i class="uil uil-instagram"></i></div>
-                <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-                <div class="icon"><i class="uil uil-dribbble"></i></div>
-                <div class="icon"><i class="uil uil-github-alt"></i></div>
+                <a href="https://www.instagram.com/bgassfx_/"><div class="icon"><i class="uil uil-instagram"></i></div></a>
+                <a href="https://github.com/BagasAlfanto/"><div class="icon"><i class="uil uil-github-alt"></i></div></a>
             </div>
             <div class="bottom-footer">
                 <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Bagas Alfanto</a> - All rights reserved</p>

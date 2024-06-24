@@ -411,8 +411,9 @@ h3{
     justify-content: center;
     align-items: center;
     padding: 20px 20px;
-    width: 100%;
+    width: 50%;
     height: 315px;
+    left: 25%;
     background: var(--second-color);
     border-radius: 10px;
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
@@ -541,6 +542,11 @@ footer{
         width: 320px;
         height: 320px;
     }
+    .contact-info{
+        width: 100%;
+        left: 0;
+        font-size: 18px;
+    }
 }
 
 
@@ -644,6 +650,11 @@ footer{
     .project-box{
         width: 80%;
     }
+    .contact-info{
+        width: 100%;
+        left: 0;
+        font-size: 12px;
+    }
     
 }
 
@@ -679,5 +690,9 @@ footer{
     }
     .featured-image{
         padding-top: 50px;
+    }
+    .contact-info{
+        width: 100%;
+        left: 0;
     }
 }
