@@ -347,6 +347,10 @@ h3{
     border-radius: 5px;
 }
 
+.skills-box p{
+    display: none;
+    color: white;
+}
 
 /* ----------------- */
 /* Project */
