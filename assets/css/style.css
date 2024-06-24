@@ -547,6 +547,10 @@ footer{
         left: 0;
         font-size: 18px;
     }
+    .skills-box p{
+        display: block;
+        color: white;
+    }
 }
 
 
@@ -654,6 +658,10 @@ footer{
         width: 100%;
         left: 0;
         font-size: 12px;
+    }
+    .skills-box p{
+        display: block;
+        color: white;
     }
     
 }
