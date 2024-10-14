@@ -591,7 +591,8 @@ footer{
         justify-content: center;
         align-items: center;
         width: 100%;
-        background-color: #00B5E7;
+        box-shadow: 0px -2px 20px 10px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
 
     }
     .nav-link{
@@ -628,11 +629,10 @@ footer{
     }
     .featured-image{
         order: 1;
-        margin-top: 65px;
+        margin-top: 100px;
         justify-content: center;
         min-height: 150px;
         width: 100%;
-        margin-top: 65px;
     }
     .image, .image img{
         width: 250px;
@@ -666,6 +666,9 @@ footer{
     .skills-box p{
         display: block;
         color: white;
+    }
+    footer {
+        margin-bottom: 2rem;
     }
     
 }
@@ -701,10 +704,13 @@ footer{
         font-size: 15px;
     }
     .featured-image{
-        padding-top: 50px;
+        padding-top: 25px;
     }
     .contact-info{
         width: 100%;
         left: 0;
+    }
+    footer {
+        margin-bottom: 2rem;
     }
 }
